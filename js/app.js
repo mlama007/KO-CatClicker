@@ -25,8 +25,8 @@ let ViewModel = function(){
 
     //increment counter a image is clicked
     this.incrementCounter = function() {
-        this.currentCat().clickCount(this.currentCat().clickCount() + 1);       
+        this.clickCount(this.clickCount() + 1);       
     };    
 }
-
+let viewModel = new ViewModel();
 ko.applyBindings(new ViewModel());
